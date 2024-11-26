@@ -2,7 +2,7 @@ import { Box, Button, Flex, Image, Link } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 
 const repoName = 'rsbuild-react-chakra-starter';
-const repoLink = `https://github.com/sozonome/${repoName}`;
+const repoLink = `https://github.com/agustinusnathaniel/${repoName}`;
 
 export const CTASection = () => {
   return (
@@ -58,7 +58,7 @@ export const CTASection = () => {
         <Link href={repoLink} isExternal>
           <Image
             align="center"
-            src={`https://img.shields.io/github/stars/sozonome/${repoName}?style=social`}
+            src={`https://img.shields.io/github/stars/agustinusnathaniel/${repoName}?style=social`}
             alt="github stars"
             height={5}
           />

@@ -1,13 +1,13 @@
 {
   "name": "rsbuild-react-chakra-starter",
   "version": "0.1.0",
-  "author": "sozonome",
+  "author": "agustinusnathaniel",
   "private": true,
   "engines": {
-    "node": ">=20.14.x",
+    "node": ">=22.11.x",
     "pnpm": ">=9"
   },
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.13.2",
   "scripts": {
     "dev": "rsbuild dev",
     "build": "rsbuild build",
