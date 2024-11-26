@@ -11,7 +11,10 @@ export const SomeText = () => {
       <Heading
         as="h2"
         fontSize={{ base: '2xl', sm: '3xl' }}
-        bgGradient="linear(to-br, teal.200, blue.600)"
+        bgGradient="to-br"
+        fontWeight="bold"
+        gradientFrom="teal.200"
+        gradientTo="blue.600"
         bgClip="text"
       >
         rsbuild-react-chakra-starter

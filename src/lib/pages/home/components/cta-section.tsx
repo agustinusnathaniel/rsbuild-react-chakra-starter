@@ -1,4 +1,5 @@
-import { Box, Button, Flex, Image, Link } from '@chakra-ui/react';
+import { Button } from '@/components/ui/button';
+import { Box, Flex, Image, Link } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 
 const repoName = 'rsbuild-react-chakra-starter';
@@ -10,7 +11,8 @@ export const CTASection = () => {
       <Flex marginY={4} justifyContent="center" gridGap={2}>
         <Link
           aria-label="Deploy to Vercel"
-          isExternal
+          target="_blank"
+          rel="noopener noreferrer"
           href={`https://vercel.com/import/git?s=${repoLink}`}
         >
           <Image
@@ -22,7 +24,8 @@ export const CTASection = () => {
 
         <Link
           aria-label="Deploy to Netlify"
-          isExternal
+          target="_blank"
+          rel="noopener noreferrer"
           href={`https://app.netlify.com/start/deploy?repository=${repoLink}`}
         >
           <Image
@@ -34,28 +37,24 @@ export const CTASection = () => {
       </Flex>
 
       <Box marginY={2}>
-        <Button
-          marginTop={2}
-          as={Link}
-          href={`${repoLink}/generate`}
-          isExternal
-          size="sm"
-        >
-          Use This Template
+        <Button marginTop={2} asChild size="sm">
+          <Link
+            href={`${repoLink}/generate`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Use This Template
+          </Link>
         </Button>
       </Box>
 
       <Flex justifyContent="center" alignItems="center" gridGap={2}>
-        <Button
-          as={Link}
-          href={repoLink}
-          isExternal
-          leftIcon={<AiFillGithub />}
-          size="sm"
-        >
-          Open in Github
+        <Button asChild size="sm" variant="outline">
+          <Link href={repoLink} target="_blank" rel="noopener noreferrer">
+            <AiFillGithub /> Open in Github
+          </Link>
         </Button>
-        <Link href={repoLink} isExternal>
+        <Link href={repoLink}>
           <Image
             align="center"
             src={`https://img.shields.io/github/stars/agustinusnathaniel/${repoName}?style=social`}

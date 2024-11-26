@@ -1,19 +1,16 @@
-import { ColorModeScript } from '@chakra-ui/react';
-import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 
 // fonts
 import '@fontsource-variable/plus-jakarta-sans';
-import { customTheme } from '@/lib/styles/customTheme';
 
+import { StrictMode } from 'react';
 import { App } from './app';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-  <React.StrictMode>
-    <ColorModeScript initialColorMode={customTheme.config?.initialColorMode} />
+  <StrictMode>
     <App />
-  </React.StrictMode>,
+  </StrictMode>,
 );
