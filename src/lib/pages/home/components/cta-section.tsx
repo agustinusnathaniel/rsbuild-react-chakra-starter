@@ -17,11 +17,10 @@ export const CTASection = () => {
         >
           <Image
             src="https://vercel.com/button"
-            height={8}
+            height="32px"
             alt="Vercel deploy button"
           />
         </Link>
-
         <Link
           aria-label="Deploy to Netlify"
           target="_blank"
@@ -30,8 +29,8 @@ export const CTASection = () => {
         >
           <Image
             src="https://www.netlify.com/img/deploy/button.svg"
-            height={8}
             alt="Netlify deploy button"
+            height="32px"
           />
         </Link>
       </Flex>
